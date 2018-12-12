@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 479, in <module>
+    excel_question_save_addr = gen_question_sheet(point_name, time, car, part)
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 262, in gen_question_sheet
+    sheet.Cells(row, 5).Value = str(occur_datatime.date()) + '°×'
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\__init__.py", line 474, in __getattr__
+    return self._ApplyTypes_(*args)
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\__init__.py", line 467, in _ApplyTypes_
+    self._oleobj_.InvokeTypes(dispid, 0, wFlags, retType, argTypes, *args),
+pywintypes.com_error: (-2146827864, 'OLE error 0x800a01a8', None, None)

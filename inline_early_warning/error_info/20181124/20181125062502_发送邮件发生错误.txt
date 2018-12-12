@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 539, in <module>
+    shutil.move(fdir + '\\' + fname, path1 )
+  File "D:\python\Anaconda3\lib\shutil.py", line 542, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path 'D:\01_MProject\cp5_inline\14_Gen_txt_pick\RO5\Bora_MQB-RO5-1847211144-NRSTS0099_L_BA.Y.txt' already exists

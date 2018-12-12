@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 464, in <module>
+    os.remove(fdir + '\\' + fname)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'D:\\01_MProject\\cp5_inline\\03_Gen_txt\\Bora_MQB-RO5-1844415897-NRSTS0239_R_BA.Y.txt'

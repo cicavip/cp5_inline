@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 526, in <module>
+    shutil.copyfile(excel_question_save_addr[0], excel_question_save_share_addr)
+  File "D:\python\Anaconda3\lib\shutil.py", line 121, in copyfile
+    with open(dst, 'wb') as fdst:
+OSError: [Errno 28] No space left on device: '\\\\msnasst-qd1-00\\P-Q-QD-MT\\01_数据管理组\\在线测量预警\\04_预警问题单\\2018\\2018-11\\2018-11-12\\Bora_MQB_RO5_NLSTS0101_O_BA.Y_20181112105419_在线测量预警问题单.xlsx'

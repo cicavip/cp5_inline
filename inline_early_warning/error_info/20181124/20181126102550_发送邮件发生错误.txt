@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 480, in <module>
+    excel_question_save_addr = gen_question_sheet(point_name, time, car, part)
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 69, in gen_question_sheet
+    wb.Worksheets('µãÃû').Name = warning_point_name
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\dynamic.py", line 581, in __setattr__
+    raise AttributeError("Property '%s.%s' can not be set." % (self._username_, attr))
+AttributeError: Property '__call__.Name' can not be set.

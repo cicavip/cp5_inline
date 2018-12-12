@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 392, in <module>
+    with open(fdir+'\\'+fname,'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\01_MProject\\cp5_inline\\03_Gen_txt\\Bora_MQB-RO5-1844217705-NRSTS0099_L_BA.Y.txt'

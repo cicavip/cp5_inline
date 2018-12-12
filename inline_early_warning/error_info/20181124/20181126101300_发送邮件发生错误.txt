@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 480, in <module>
+    excel_question_save_addr = gen_question_sheet(point_name, time, car, part)
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot.py", line 154, in gen_question_sheet
+    sheet.Cells(69, i + 2).Value = point_standard_up_tol
+  File "C:\Users\DATASY~1\AppData\Local\Temp\2\gen_py\3.6\00020813-0000-0000-C000-000000000046x0x1x7\Range.py", line 686, in __call__
+    , ColumnIndex)
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\__init__.py", line 467, in _ApplyTypes_
+    self._oleobj_.InvokeTypes(dispid, 0, wFlags, retType, argTypes, *args),
+pywintypes.com_error: (-2146827864, 'OLE error 0x800a01a8', None, None)

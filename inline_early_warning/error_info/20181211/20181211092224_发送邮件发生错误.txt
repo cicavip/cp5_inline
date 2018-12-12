@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\gencache.py", line 530, in EnsureDispatch
+    ti = disp._oleobj_.GetTypeInfo()
+pywintypes.com_error: (-2147418111, 'Call was rejected by callee.', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot-b.py", line 505, in <module>
+    excel_question_save_addr = gen_question_sheet(point_name, time, car, part)
+  File "D:\01_MProject\cp5_inline\inline_early_warning\sendmail_reprot-b.py", line 64, in gen_question_sheet
+    excel = win32.gencache.EnsureDispatch('Excel.Application')
+  File "D:\python\Anaconda3\lib\site-packages\win32com\client\gencache.py", line 541, in EnsureDispatch
+    raise TypeError("This COM object can not automate the makepy process - please run makepy manually for this object")
+TypeError: This COM object can not automate the makepy process - please run makepy manually for this object
