@@ -107,25 +107,25 @@ def inline_warining_condition(host, user, pw,car,part,point_name_list,Identnumme
                     f.write(EndDateTime + '\n')
                     f.write(alarm_description)
 
-            warning_table = 'inline_warning_' + part
-            warning_record_table_byte = '(ID INT NOT NULL auto_increment primary key,' \
-                                        'PointName CHAR(30) NOT NULL,' \
-                                        'DifferenceValue  FLOAT, ' \
-                                        'EndDateTime  DATETIME, ' \
-                                        'Identnummer  CHAR(50),' \
-                                        'WarningDescribe CHAR(200), ' \
-                                        'Amount INT ,' \
-                                        'WarningType  CHAR(100) ' \
-                                        ')'
+                warning_table = 'inline_warning_' + part
+                warning_record_table_byte = '(ID INT NOT NULL auto_increment primary key,' \
+                                            'PointName CHAR(30) NOT NULL,' \
+                                            'DifferenceValue  FLOAT, ' \
+                                            'EndDateTime  DATETIME, ' \
+                                            'Identnummer  CHAR(50),' \
+                                            'WarningDescribe CHAR(200), ' \
+                                            'Amount INT ,' \
+                                            'WarningType  CHAR(100) ' \
+                                            ')'
 
-            cre_db_table(host, user, pw, database, warning_table,
-                         warning_record_table_byte)
+                cre_db_table(host, user, pw, database, warning_table,
+                             warning_record_table_byte)
 
-            # print()
-            canshu = (database, warning_table, point_name, cha_zhi, EndDateTime,
-                      Identnummer, alarm_description, cal_n, WarningType)
-            record_sql = "insert into %s.%s(PointName,DifferenceValue,EndDateTime,Identnummer,WarningDescribe,Amount,WarningType) values('%s','%s','%s','%s','%s',%d,'%s')" % canshu
-            print(record_sql)
-            into_data(host, user, pw, record_sql)
-            print('预警数据写入数据库')
-            continue
+                # print()
+                canshu = (database, warning_table, point_name, cha_zhi, EndDateTime,
+                          Identnummer, alarm_description, cal_n, WarningType)
+                record_sql = "insert into %s.%s(PointName,DifferenceValue,EndDateTime,Identnummer,WarningDescribe,Amount,WarningType) values('%s','%s','%s','%s','%s',%d,'%s')" % canshu
+                print(record_sql)
+                into_data(host, user, pw, record_sql)
+                print('预警数据写入数据库')
+                continue
